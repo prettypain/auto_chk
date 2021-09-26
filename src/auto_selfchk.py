@@ -44,17 +44,17 @@ class student:
 
         driver.find_element_by_id("btnConfirm").click()
         time.sleep(1)
-        try:
-            result = Alert(driver)
-            print(result.text)
-            result.accept()
-        except:
-            print("alert이 없습니다.")
-        time.sleep(0.5)
-        driver.find_element_by_id("extraInfo0").click()
-        time.sleep(0.5)
-        driver.find_element_by_id("btnConfirm").click()
-        time.sleep(0.5)
+#         try:
+#             result = Alert(driver)
+#             print(result.text)
+#             result.accept()
+#         except:
+#             print("alert이 없습니다.")
+#         time.sleep(0.5)
+#         driver.find_element_by_id("extraInfo0").click()
+#         time.sleep(0.5)
+#         driver.find_element_by_id("btnConfirm").click()
+#         time.sleep(0.5)
         driver.find_element_by_xpath('//*[@id="WriteInfoForm"]/table/tbody/tr/td/input').click()
         time.sleep(0.5)
         for i in self.pw:
